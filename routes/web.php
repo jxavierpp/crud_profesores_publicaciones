@@ -11,3 +11,4 @@ Route::get('publicaciones/asignar', function () {
 })->name('publicaciones.asignar');
 Route::resource('publicaciones', 'PublicacionesController');
 
+Route::get('profesor/publicaciones/{id}','PublicacionesController@index1')->name('publicaciones.index1');

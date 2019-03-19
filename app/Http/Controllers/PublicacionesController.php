@@ -14,6 +14,14 @@ class PublicacionesController extends Controller
         return view('publicaciones.index', compact('pubs'));
     }
 
+    public function index1($id)
+    {   
+        $profesor = Profesor::find($id);
+        $pubs = $profesor->publicaciones;
+        return view('publicaciones.index1', compact('pubs'));
+    }
+
+
     public function create()
     {
         $profesores = Profesor::all('nombre', 'id');

@@ -45,7 +45,8 @@
                                     <button name="submit" type="submit" class="btn btn-sm btn-danger">Borrar</button>
                                 {!! Form::close() !!}
                             </div>
-                            <a href="{{ route("profesores.edit", $profesor->id) }}" class="btn btn-sm btn-info pull-right" style="margin-right: 5px">Editar</span></a>
+                            <a href="{{ route("profesores.edit", $profesor->id) }}" class="btn btn-sm btn-info pull-right" style="margin: 5px">Editar</span></a>
+                            <a href="{{ route("publicaciones.index1", $profesor->id) }}" class="btn btn-sm btn-success pull-right" style="margin: 5px">Ir a publicaciones</span></a>
                         </td>
                     </tr>
                 @endforeach
